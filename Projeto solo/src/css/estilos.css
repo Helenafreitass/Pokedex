@@ -1,0 +1,124 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1702px;
+    margin: none auto;
+    background-color: #89CFF0;
+    color: #333;
+}
+
+body .modo-noturno{
+    background-color: #191970;
+    color: #f5f5f5; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo,
+header .imagem-botao{
+width: 50px;
+transition: 0.2s ease-in-out;
+}
+header #botao-noite{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .pokecard:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+
+    padding:25px;
+}
+
+main .lista-pokemon{
+    display: flex;
+     flex-wrap: wrap;
+     gap:30px;
+     justify-content: center;
+}
+
+main .pokecard{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .pokecard:hover{
+
+    background-color: #96d9d6;
+}
+
+.modo-noturno .pokecard{
+    background-color: #a8a8a8;
+}
+
+main .pokecard .informacoes{
+display: flex;
+justify-content: space-between;
+border: 1.4px solid #333333;
+border-radius: 10px;
+
+}
+
+main .pokecard .informacoes span{
+    padding: 5px;
+    font-size: 17px;
+}
+
+main .pokecard .gif{
+width: 80px;
+height: 80px;
+align-items: center;
+}
+
+main .pokecard .tipos{
+
+    display: flex;
+    gap: 15px;
+}
+
+main .pokecard .tipo{
+    padding: 8px;
+    border-radius: 10px; 
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.veneno{
+    background-color: #df67ddfb;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
